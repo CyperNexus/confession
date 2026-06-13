@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi cậu...</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="falling-hearts" id="falling-hearts"></div>
+    
+    <!-- Decorative Background Emojis -->
+    <div class="deco-emoji top-left">✨</div>
+    <div class="deco-emoji top-right">🎀</div>
+    <div class="deco-emoji bottom-left">💖</div>
+    <div class="deco-emoji bottom-right">🌸</div>
+    
+    <div id="question-container" class="container glass">
+        <div class="cute-emoji-main">🧸🌹</div>
+        <h1 id="question-text">Cậu làm người yêu tớ nhé?</h1>
+        <div class="buttons">
+            <button id="btn-yes" class="btn-glow">Yes</button>
+            <button id="btn-no">No</button>
+        </div>
+    </div>
+
+    <div id="success-container" class="container glass hidden">
+        <div class="cute-emoji-main">🐻🎉</div>
+        <h1>Yeahhhhhhhh 🎉</h1>
+        <div class="selection-box glass-inner">
+            <p>Chọn những việc chúng mình sẽ làm cùng nhau nhé (có thể chọn nhiều):</p>
+            <label class="custom-checkbox">
+                <input type="checkbox" name="activity" value="đi chơi"> 
+                <span class="checkmark"></span> Đi chơi loanh quanh
+            </label>
+            <label class="custom-checkbox">
+                <input type="checkbox" name="activity" value="đi ăn" id="chk-eat"> 
+                <span class="checkmark"></span> Đi ăn sập quán
+            </label>
+            
+            <!-- Sub-menu for eating -->
+            <div id="eat-sub-menu" class="sub-menu hidden">
+                <p>Cụ thể là ăn gì nè?</p>
+                <label class="custom-checkbox sub-checkbox">
+                    <input type="checkbox" name="restaurant" value="Jollibee">
+                    <span class="checkmark"></span> Jollibee
+                </label>
+                <label class="custom-checkbox sub-checkbox">
+                    <input type="checkbox" name="restaurant" value="KFC">
+                    <span class="checkmark"></span> KFC
+                </label>
+                <label class="custom-checkbox sub-checkbox">
+                    <input type="checkbox" name="restaurant" value="Mì cay">
+                    <span class="checkmark"></span> Mì cay
+                </label>
+                <label class="custom-checkbox sub-checkbox">
+                    <input type="checkbox" name="restaurant" value="Pizza">
+                    <span class="checkmark"></span> Pizza
+                </label>
+                <label class="custom-checkbox sub-checkbox">
+                    <input type="checkbox" name="restaurant" value="Ăn vặt">
+                    <span class="checkmark"></span> Ăn vặt đường phố
+                </label>
+            </div>
+
+            <label class="custom-checkbox">
+                <input type="checkbox" name="activity" value="xem phim"> 
+                <span class="checkmark"></span> Xem phim rạp
+            </label>
+        </div>
+        
+        <div class="selection-box glass-inner">
+            <p>Chọn thời gian chúng mình hẹn hò nha:</p>
+            <input type="datetime-local" id="date-time-picker">
+        </div>
+
+        <button id="btn-submit" class="btn-glow">Gửi nha 💖</button>
+    </div>
+
+    <div id="thankyou-container" class="container glass hidden">
+        <div class="cute-emoji-main">🐻💖</div>
+        <h1>Cảm ơn cậu nhìu nhìu ❤️</h1>
+        <p class="final-text">i can't wait to see u ❤️</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
